@@ -14,6 +14,13 @@ namespace uiuc {
 
   // Put your HSLAPixel class definition here.
   // (Remember to end it with a semicolon!)
-
+    class HSLAPixel{
+        public:
+            HSLAPixel():h(0), s(0), l(0), a(0){}
+            HSLAPixel(const double h, const double s, const double l, const double a):h(h), s(s), l(l), a(a){}
+            ~HSLAPixel(){}
+        public:
+            double h, s, l, a;
+    };
 
 }
